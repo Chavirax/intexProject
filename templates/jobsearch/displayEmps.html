@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <br><br>
+    <div class="container">
+    <h1>Our Team</h1>
+    <br>
+        {% for emp in our_emps %}
+        <p>
+            {% if emp.emp_title != None %}
+                {{ emp.emp_title }}
+            {% endif %}
+            {{ emp.emp_first }}
+            {{ emp.emp_last }},
+            {{ emp.emp_state }},
+            {{ emp.contact_information }}
+            {% for jobs in emp.emp_skills.all %}
+             <br>
+                {{ jobs.description }}  
+            {% endfor %}
+        {% endfor %} 
+    </div>
+{% endblock %}       
+
+

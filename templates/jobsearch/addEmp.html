@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<br><br>
+<br><br>
+<div class="container">
+    <h1>Add Employee:</h1>
+    <br><br>
+        <form name="form" method="post" action="{% url 'storeapplicant' %}">
+            {% csrf_token %}
+            <label for='AFirstName'>Enter the first name: </label>
+            <input type="text" name='AFirstName' id='AFirstName'>
+            <br><br>
+            <label for='ALastName'>Enter the last name: </label>
+            <input type="text" name='ALastName' id='ALastName'> 
+            <br><br>
+            <label for='AEmail'>Enter your email: </label>
+            <input type="text" name='AEmail' id='AEmail'> 
+            <br><br>
+            <label for='AUsername'>Enter your email: </label>
+            <input type="text" name='AUsername' id='AUsername'> 
+            <br><br>
+            <button type="submit" class="btn btn-primary">Add</button>
+        </form>
+</div>
+<br><br>
+<br><br>
+
+<div class="container">
+    <h1>Update Employee:</h1>
+    <br><br>
+    
+    <form name="form" method="get" action="{% url 'update' %}">
+        <label for='first_name'>Enter the first name:</label>
+        <input type="text" name='emp_first' id='first_name'>
+        <br><br>
+        <label for='last_name'>Enter the last name:</label>
+        <input type="text" name='emp_last' id='last_name'>
+
+        <br><br>
+        <label for='new_last_name'>Enter the new last name:</label>
+        <input type="text" name='new_last_name' id='new_last_name'>
+        <br><br>
+        <button type="submit" class="btn btn-primary">Update</button>
+    </form>
+</div>
+<br> <br> 
+<br> <br>
+<div class="container">
+    <h1> Delete Employee:</h1>
+    <br><br>
+    <form name="form" method="get" action="{% url 'delete' %}">
+        <label for='emp_first'>
+            Enter the first name:
+        </label>
+        <input type="text" name='emp_first' id='emp_first'>
+        <br><br>
+        <label for='emp_last'>
+            Enter the last name:
+        </label>
+        <input type="text" name='emp_last' id='emp_last'>
+        <br><br>
+        <button type="submit" class="btn btn-primary">Delete</button>
+    </form>
+    
+<br> <br> 
+<br> <br> 
+{% endblock %}     

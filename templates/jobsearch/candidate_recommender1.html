@@ -1,0 +1,26 @@
+
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<br><br>
+<br><br>
+<div class="container">
+ <h1>Which candidate are you currently looking for?</h1>
+</div>
+<br><br>
+<div class="container">
+    <form name="form" method="GET" action="{% url 'job_candidates' %}">
+        {% csrf_token %}
+
+        <label for='user_id'>User_id: </label>
+        <input type="text" name='user_id' id='user_id'>
+        <br><br>
+        <label for='job_title'>Job title:</label>
+        <input type="text" name='job_title' id='job_title'> 
+        <br><br>
+        <button type="submit" class="btn btn-primary">Run</button>
+    </form>
+
+<br><br>
+
+{% endblock %}  

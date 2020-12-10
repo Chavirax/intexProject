@@ -1,0 +1,163 @@
+{% extends 'base.html'%}
+{% load static %}
+{% block content %}
+  <!-- Masthead -->
+    <header class="masthead text-white text-center">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-9 mx-auto">
+            <h1 class="mb-5">About Black Cyber Recruiter</h1>
+          </div>
+          <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+            <form>
+              <div class="form-row">
+                <div class="col-12 col-md-9 mb-2 mb-md-0">
+                 <!-- 
+                     <input type="email" class="form-control form-control-lg" placeholder="search a position...">
+                 --> 
+                </div>
+                <!-- 
+                <div class="col-12 col-md-3">
+                
+                    <button type="submit" class="btn btn-block btn-lg btn-primary">Search!</button>
+                 
+                </div>
+                --> 
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </header>
+
+  <!-- Our Purpose Paragraph -->
+  <br>
+    <br>
+  <!-- Image Showcases -->
+  <section class="showcase">
+    <div class="container-fluid p-0">
+      <div class="row no-gutters">
+        <!--<div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url( '{% static 'img/bg-showcase-1.jpg' %}' );"></div>-->
+        <div class="">
+          <h2>Our Purpose</h2>
+          <br>
+          <p class="lead mb-0">This website is dedicated to promoting diversity and
+            inclusion in America’s employment by connecting the Black community with employers who
+            foster equal opportunity as part of their corporate policies.Employers often try to find diverse pockets of qualified job candidates by recruiting with a focus
+            on diversity, equity, and inclusion (DEI). There are employer standard practices that put Black
+            students at a disadvantage when trying to fill that specific target segment of recruiting goals</p>
+        </div>
+      </div>
+      <br>
+      <br>
+      <div class="row no-gutters">
+        <div class="col-lg-6 text-white showcase-img" style="background-image: url('{% static 'img/city.jpg' %}');"></div>
+        <div class="col-lg-6 my-auto showcase-text">
+          <h2>What's happening now</h2>
+          <p class="lead mb-0">Job inequality continues to plague Blacks in the US. In October 2020, the US unemployment rate
+            for Whites was 6% compared to that of Blacks of 10.8%</p>
+        </div>
+      </div>
+      <br>
+      <br>
+      <div class="row no-gutters">
+        <!--<div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url( '{% static 'img/bg-showcase-1.jpg' %}' );"></div>-->
+        <div class="">
+          <br>
+          <p class="lead mb-0">In a 2020 study by Handshake, an app that connects students on college campuses with open
+            positions, it was found that GPA cut-offs exclude a large percentage of Black students from being able to apply
+            for jobs. Of students submitting applications, 57% were non-Black students and 40%
+            were Black students. In fact, Handshake went on to say that "Last year we first reported
+            that GPA isn’t an accurate predictor of performance and what attributes employers should
+            look for instead." </p>
+        </div>
+      </div>
+      <div class="row no-gutters">
+        <!--<div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url( '{% static 'img/bg-showcase-1.jpg' %}' );"></div>-->
+        <div class="">
+          <br>
+          <p class="lead mb-0">Rigid recruiting windows give little time for students to prepare and perfect their
+            resumes and job applications. Handshake reported that "… Black students don’t have the
+            same opportunities to iterate on their resumes, cover letters, transcripts, and letters of
+            recommendation within the three week window when applications are typically open
+            during the fall and spring” due to tending “to have more on their plates than their peers.”</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials text-center bg-light">
+    <div class="container">
+      <h1 class="mb-5">Learn More</h1>
+      <div class="row">
+      </div>
+    </div>
+  </section>
+  <section class="features-icons bg-light text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+            <div class="features-icons-icon d-flex">
+              <i class="icon-layers m-auto text-primary"></i>
+            </div>
+            <h3>Stats</h3>
+            <p class="lead mb-0">Labor Market Activity of Blacks in the United States</p>
+            <br>
+            <a class="btn btn-primary" href="https://www.bls.gov/spotlight/2020/african-american-history-month/home.htm">Learn</a>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="features-icons-item mx-auto mb-0 mb-lg-3">
+            <div class="features-icons-icon d-flex">
+              <i class="icon-layers m-auto text-primary"></i>
+            </div>
+            <h3>Handshake Blog</h3>
+            <p class="lead mb-0">Employers, how is your qualified criteria perpetuating systemic barriers to Black students finding a great first job? Learn more in our latest findings. </p>
+            <br>
+            <a class="btn btn-primary" href="https://learn.joinhandshake.com/employers/3-hiring-practices-that-disadvantage-black-students">Learn</a>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="features-icons-item mx-auto mb-0 mb-lg-3">
+            <div class="features-icons-icon d-flex">
+              <i class="icon-layers m-auto text-primary"></i>
+            </div>
+            <h3>Economic Reasearch</h3>
+            <p class="lead mb-0">Unemployment Rate - Black or African American</p>
+            <br>
+            <a class="btn btn-primary" href="https://fred.stlouisfed.org/series/LNS14000006">Learn</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action 
+  <section class="call-to-action text-white text-center">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-9 mx-auto">
+          <h2 class="mb-4">Ready to get started? Sign up now!</h2>
+        </div>
+        <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+          <form>
+            <div class="form-row">
+              <div class="col-12 col-md-9 mb-2 mb-md-0">
+                <input type="email" class="form-control form-control-lg" placeholder="Enter your email...">
+              </div>
+              <div class="col-12 col-md-3">
+                <button type="submit" class="btn btn-block btn-lg btn-primary">Sign up!</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+-->
+{% endblock %}
+  

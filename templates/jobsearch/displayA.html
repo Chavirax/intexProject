@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <br><br>
+    <div class='container'>
+        <h1>Applicants</h1>
+    </div>
+    <br><br>
+    <div class="container">
+        {% for applicant in our_applicants %}
+            <p>
+                Name:
+                {{ applicant.AFirstName }}
+                {{ applicant.ALastName }}
+                <br>
+                 Email: {{ applicant.AEmail }}
+                 <br>
+                 User_ID: {{ applicant.Applicant_ID}}
+                 <br><br>
+                 
+            </p>  
+        {% endfor %} 
+    </div>
+
+    <div class="container">
+       <h3>
+            We also recommend the following applicants for this job:
+       </h3>
+           <br>
+            {{reco}} 
+    </div>
+{% endblock %}       

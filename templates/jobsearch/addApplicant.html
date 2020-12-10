@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<br><br>
+<br><br>
+<div class="container">
+    <h1>Application:</h1>
+</div>
+<br><br>
+<div class="container">
+    <form name="form" method="post" action="{% url 'storeapplicant' %}">
+        {% csrf_token %}
+        <label for='AFirstName'>Enter the first name: </label>
+        <input type="text" name='AFirstName' id='AFirstName'>
+        <br><br>
+        <label for='ALastName'>Enter the last name: </label>
+        <input type="text" name='ALastName' id='ALastName'> 
+        <br><br>
+        <label for='AEmail'>Enter your email: </label>
+        <input type="text" name='AEmail' id='AEmail'> 
+        <br><br>
+        <label for='AUsername'>Enter your username: </label>
+        <input type="text" name='AUsername' id='AUsername'> 
+        <br><br>
+        <button type="submit" class="btn btn-primary">Apply</button>
+    </form>
+</div>
+<br> <br><br><br>
+
+<br> <br> 
+<br> <br> 
+{% endblock %}     

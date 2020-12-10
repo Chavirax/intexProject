@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<br> <br><br><br>
+<div class="container">
+    <h1>Enter your dream job and your matching score:</h1>
+</div>
+<br><br>
+<div class="container">
+    <form name="form" method="GET" action="{% url 'regression' %}">
+        {% csrf_token %}
+
+        <label for='job_title'>Job Title: </label>
+        <input type="text" name='job_title' id='job_title'>
+        <br><br>
+        <label for='matching_skills'>Matching Skill: </label>
+        <input type="text" name='matching_skills' id='matching_skills'> 
+        <br><br>
+        <br><br>
+        <button type="submit" class="btn btn-primary">Run</button>
+    </form>
+</div>
+<br> <br> 
+
+
+<br> <br> 
+{% endblock %}     
